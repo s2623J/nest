@@ -1,0 +1,11 @@
+NestJS:
+    Backend JS framework inspired by Angular
+    Generate a new project with: "nest new quotes-server"
+    Execute "npm run start:dev" and navigate to: "http://localhost:3000/"
+    
+Dry Run Command:
+    Displays files to be generated without actually generating them:
+        (ie. 'nest g controller quotes --dry-run' or 
+             'nest g controller quotes --no-spec --dry-run')
+    
+    
