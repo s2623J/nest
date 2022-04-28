@@ -7,5 +7,27 @@ Dry Run Command:
     Displays files to be generated without actually generating them:
         (ie. 'nest g controller quotes --dry-run' or 
              'nest g controller quotes --no-spec --dry-run')
+    Dry Run Generation - Allows for seeing the files affected by executing 
+        certain nest commands. Just add the switch "--dry-run"
     
+Postman:
+    Use Postman to process POST statements/params/responses etc.
+
+Posts:
+    Receive/process GET and POST messages
+    Send output through functions of the server 
+
+Interfaces:
+    DTO -  Encapsulates data (think transport), and sends it from one subsystem 
+        of an application to another.
+    Interface - Used for type-checking and defining (think definition) the types 
+        of data that can be passed to a controller or a Nest service.
+    
+Swagger:
+    Install with: "npm i @nestjs/swagger swagger-ui-express"
+    Define options in main.ts
+    Result should be an auto-generated Swagger doc that can be found at:
+        http://localhost:3000/api/
+    Testing of the API can now be done with "try it out" and "execute" functions, 
+        thereby eliminating the need for Postman
     

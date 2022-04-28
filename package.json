@@ -1,6 +1,5 @@
 {
   "name": "quotes-server",
-  "version": "1.0",
   "description": "Angular/Nest Refresher course",
   "author": "Dave Michael",
   "private": true,

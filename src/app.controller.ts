@@ -10,11 +10,4 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
-
-  // @Get('quotes')
-  // // This sharply defines the type of object returned (below)
-  // getQuotes(): { message: string } {
-  //   // return 'quotes';
-  //   return { message: 'quotes' };
-  // }
 }
