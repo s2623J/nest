@@ -1,6 +1,5 @@
 import { Body, Controller, Delete, Get, Param, Post, Put } from '@nestjs/common';
 import { ApiTags, ApiParam } from '@nestjs/swagger';
-import { identity } from 'rxjs';
 import { CreateQuoteDto } from './dto/create-quote.dto';
 import { Quote } from './interfaces/quote.interface';
 import { QuotesService } from './quotes.service';

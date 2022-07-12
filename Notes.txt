@@ -31,3 +31,27 @@ Swagger:
     Testing of the API can now be done with "try it out" and "execute" functions, 
         thereby eliminating the need for Postman
     
+Debug:
+    Click on Debug icon in far left VSCode margin
+    Edit launch.json by replacing section of config (use intellisense to assist) with:
+        {
+            "type":         "node",
+            "request":      "attach",
+            "name":         "Attach by Process ID",
+            "processId":    "${command:PickProcess}"
+        }
+    Select "Attach by Process ID" | or | 'Javascript Debug Terminal' on play button
+    Click Play button | or | enter "npm run start:dev" in terminal
+    Select "node dist/main.js"| or | run Swagger test to begin
+    When stopped at breakpoint, observe values displayed at left column
+
+CORS:
+    CORS can be enabled by adding "app.enableCors();" to main.ts 
+        (ie. "https://docs.nestjs.com/security/cors")    
+    
+Mongo:
+    Install with: "npm install --save @nestjs/mongoose mongoose"
+    Add "import { MongooseModule } from '@nestjs/mongoose';" to module.ts 
+    Add "imports: [MongooseModule.forRoot('mongodb://localhost/nest')]," to 
+        imports section of module.ts
+    
